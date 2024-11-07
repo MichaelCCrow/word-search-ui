@@ -42,9 +42,9 @@ const anything = computed(() => query.value ? words.filter(word => [...query.val
       <v-card-item>
         <v-row>
           <v-defaults-provider :defaults="textFieldDefaults">
-            <v-text-field v-model.trim="beg" label="Beginning Letters" :maxlength="len+beg.length-count" append-inner-icon="mdi-arrow-expand-right" />
-            <v-text-field v-model.trim="mid" label="Middle Letters"    :maxlength="len+mid.length-count" append-inner-icon="mdi-arrow-expand-horizontal" />
-            <v-text-field v-model.trim="end" label="Ending Letters"    :maxlength="len+end.length-count" prepend-inner-icon="mdi-arrow-expand-left" />
+            <v-text-field v-model.trim="beg" label="Beginning Letters" :maxlength="len+beg.length-count" append-inner-icon="mdi-arrow-expand-right"      autocapitalize="off" />
+            <v-text-field v-model.trim="mid" label="Middle Letters"    :maxlength="len+mid.length-count" append-inner-icon="mdi-arrow-expand-horizontal" autocapitalize="off" />
+            <v-text-field v-model.trim="end" label="Ending Letters"    :maxlength="len+end.length-count" prepend-inner-icon="mdi-arrow-expand-left"      autocapitalize="off" />
           </v-defaults-provider>
         </v-row>
       </v-card-item>

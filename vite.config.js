@@ -5,6 +5,9 @@ import { fileURLToPath, URL } from 'node:url'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
+  server: {
+    host: true,
+  },
   base: '/word-search-ui',
   resolve: {
     alias: {
